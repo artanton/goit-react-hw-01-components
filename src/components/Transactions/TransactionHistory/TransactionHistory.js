@@ -1,5 +1,5 @@
-import { Transaction } from "../Transaction/Transaction";
-import { THead, Table } from "./TransactionHistoryStyled";
+import { Transaction } from '../Transaction/Transaction';
+import { THead, Table } from './TransactionHistoryStyled';
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -14,12 +14,12 @@ export const TransactionHistory = ({ items }) => {
         </thead>
         <tbody>
           {items.map((item, index) => {
-            return <Transaction key={item.id} transaction={item} index={index} />;
+            return (
+              <Transaction key={item.id} transaction={item} index={index} />
+            );
           })}
         </tbody>
       </Table>
     </section>
   );
 };
-
-

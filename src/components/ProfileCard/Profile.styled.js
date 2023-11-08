@@ -8,22 +8,22 @@ export const Ava = styled.img`
 
 export const ProfileWrapper = styled.div`
   width: 400px;
-  border: 1px solid ${p=>p.theme.colors.borderGray};
+  border: 1px solid ${p => p.theme.colors.borderGray};
   margin: 20px 0;
 
-  background-color: ${p=>p.theme.colors.darkGray};
-  border-radius: ${p=>p.theme.borderRad.norm};
+  background-color: ${p => p.theme.colors.darkGray};
+  border-radius: ${p => p.theme.borderRad.norm};
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 `;
 
 export const PersonWrapper = styled.div`
-  font-size: 28px;
- 
-  padding: 20px 0px;
-  border-top-left-radius: ${p=>p.theme.borderRad.norm};
-  border-top-right-radius: ${p=>p.theme.borderRad.norm};
+  font-size: 24px;
 
-  background-color: ${p=>p.theme.colors.lightGray};
+  padding: 20px 0px;
+  border-top-left-radius: ${p => p.theme.borderRad.norm};
+  border-top-right-radius: ${p => p.theme.borderRad.norm};
+
+  background-color: ${p => p.theme.colors.lightGray};
 
   display: flex;
   gap: 10px;
@@ -32,12 +32,17 @@ export const PersonWrapper = styled.div`
   list-style: none;
 `;
 
+export const PersonName = styled.p`
+  font-weight: bold;
+  font-size: 36px;
+`;
+
 export const StatsList = styled.ul`
   font-size: 20px;
   padding: 10px 0px;
 
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 `;
 
 export const StatItem = styled.li`
@@ -46,4 +51,3 @@ export const StatItem = styled.li`
   align-items: center;
   gap: 10px;
 `;
-

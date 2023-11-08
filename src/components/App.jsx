@@ -21,10 +21,10 @@ export const App = () => {
       }}
     >
       <ProfileCard user={user} />
-      <StatList data = {data}/>
-      <FriendsList friends ={friends} />
+      <StatList data={data} />
+      <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
-      <GlobalStyle/>
+      <GlobalStyle />
     </div>
   );
 };
