@@ -3,10 +3,10 @@ import { StatSection, StatTable } from './StatListStyled';
 
 // import PropTypes from 'prop-types';
 
-export const StatList = ({ data }) => {
+export const StatList = ({ title, data }) => {
   return (
     <StatSection>
-      {data.length > 0 && <h2>Upload stats</h2>}
+      {data.length > 0 && <h2>{title}</h2>}
       <StatTable>
         {data.map(item => {
           return (

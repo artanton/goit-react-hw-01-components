@@ -1,11 +1,11 @@
-import user from '../user.json';
+import user from '../data/user.json';
 import { GlobalStyle } from './GlobalStyle';
 import { ProfileCard } from './ProfileCard/ProfileCard';
-import data from '../data.json';
+import data from '../data/data.json';
 import { StatList } from './Statistics/StatList/StatList';
-import friends from '../friends.json';
+import friends from '../data/friends.json';
 import { FriendsList } from './Friends/FriendsList/FriendsList';
-import transactions from '../transactions.json';
+import transactions from '../data/transactions.json';
 import { TransactionHistory } from './Transactions/TransactionHistory/TransactionHistory';
 
 export const App = () => {
@@ -21,7 +21,7 @@ export const App = () => {
       }}
     >
       <ProfileCard user={user} />
-      <StatList data={data} />
+      <StatList  title="Upload stats" data={data} />
       <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
       <GlobalStyle />
