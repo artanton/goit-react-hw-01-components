@@ -6,17 +6,18 @@ import { StatSection, StatTable } from './StatListStyled';
 export const StatList = ({ title, data }) => {
   return (
     <StatSection>
-      {data.length > 0 && <h2>{title}</h2>}
-      <StatTable>
-        {data.map(item => {
-          return (
-            <li key={item.id}>
-              <StatItem item={item} />
-            </li>
-          );
-        })}
-      </StatTable>
+      {title && <h2>{title}</h2>}
+      {data.length > 0 && (
+        <StatTable>
+          {data.map(item => {
+            return (
+              <li key={item.id}>
+                <StatItem item={item} />
+              </li>
+            );
+          })}
+        </StatTable>
+      )}
     </StatSection>
   );
 };
-
